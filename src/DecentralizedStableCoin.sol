@@ -10,7 +10,8 @@ import {Ownable} from "openzeppelin-contracts/contracts/access/Ownable.sol";
  * collateral: Exogenous (WBTC and WETH)
  * minting: algorithmic
  * Relative Stability : Pegged to USD
- * @notice this is Decentralized stable coin that is that
+ * @notice this is Decentralized stable coin that is governed by the DSCEngine,It is an ERC20 contract that can be minted
+ * and burned by the DSCEngine.
  */
 contract DecentralizedStableCoin is ERC20Burnable, Ownable {
     error DecentralizedStableCoin__MustBeMOreThanZero();
